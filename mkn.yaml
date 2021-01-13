@@ -1,0 +1,16 @@
+
+
+name: llnl.raja
+scm: https://github.com/dekken/llnl.raja
+parent: inc
+
+profile:
+- name: inc
+  inc: include
+
+- name: gpu
+  parent: inc
+  lib: RAJA
+  path: lib
+  test: raja/examples/jacobi.cpp
+
