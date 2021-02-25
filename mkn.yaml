@@ -1,7 +1,6 @@
 
 
 name: llnl.raja
-scm: https://github.com/dekken/llnl.raja
 parent: inc
 
 profile:
