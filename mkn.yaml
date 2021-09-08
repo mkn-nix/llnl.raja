@@ -7,14 +7,14 @@ profile:
 - name: inc
   inc: include
 
-- name: gpu
+- name: lib
   parent: inc
   lib: RAJA
   path: lib
   test: raja/examples/jacobi.cpp
 
-- name: openacc
-  main: jacobi-1d-imper.c
-  src: polybench.c
-  arg: -fopenacc -foffload=amdgcn-amdhsa="-march=gfx900" -foffload="-O3" -O3
-  mode: none
+#- name: openacc
+#  main: jacobi-1d-imper.c
+#  src: polybench.c
+#  arg: -fopenacc -foffload=amdgcn-amdhsa="-march=gfx900" -foffload="-O3" -O3
+#  mode: none
